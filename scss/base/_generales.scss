@@ -2,13 +2,116 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: white;
-    margin: 0%;
-    padding: 0%;
+    background: rgb(47, 45, 45);
+    background: linear-gradient(90deg, rgba(47, 45, 45, 1) 0%, rgba(209, 44, 44, 1) 50%, rgba(217, 91, 8, 1) 100%);
+}
+
+/*BODY-CARTAS-IMAGENES-MAIN-BOOTSTRAP*/
+.card-group {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+.card {
+    max-width: 300px;
+    outline: 2px solid #fff;
+}
+.card:hover {
+    transform: translateY(-10px);
+    animation: bounceAnimation 1s infinite;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+@keyframes bounceAnimation {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+.card img {
+    outline: 2px solid #fff;
+}
+.card h2 {
+    text-align: center;
+    font-weight: bold;
+}
+.card p {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
+}
+
+/*BODY-MAIN-TEXTOS*/
+body p {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #dad2d2;
+    max-width: 800px;
+    margin: 20px auto;
+}
+h1 {
+    margin-top: 20px;
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    animation: fade-scale 3s infinite linear alternate;
+}
+@keyframes fade-scale {
+    from {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    to {
+        opacity: 0.5;
+        transform: scale(1.0);
+    }
+}
+h3 {
+    margin-top: 20px;
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    animation: fade-scale 3s infinite linear alternate;
+}
+@keyframes fade-scale {
+    from {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    to {
+        opacity: 0.5;
+        transform: scale(1.0);
+    }
 }
 
 /*--BODY/HR/SEPARADORES--*/
-
+body hr {
+    border: none;
+    border-top: 5px solid #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    margin: 20px auto;
+    width: 80%;
+}
 body section p {
     text-align: center;
     color: #f56606;
@@ -17,41 +120,69 @@ body section p {
     font-family: 'Poppins', sans-serif;
 }
 
-/*--BODY/H1/H2/PARRAFOS--*/
-
-main h1 {
-    color: #050505;
-    margin: 0;
+/*--BODY/PDF´S--*/
+.pdf-link {
+    display: block;
+    width: 50%;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #f56606;
+    color: #fff;
+    text-decoration: none;
     text-align: center;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 700;
+    font-size: 20px;
+    font-weight: bold;
+    color: #dad2d2;
+    border-radius: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.2s ease;
 }
-
-main h2 {
+.pdf-link:hover {
+    background-color: #dad2d2;
     color: #050505;
+}
+
+/*--BODY/BOTONES DE COMPRA--*/
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    margin-bottom: 20px;
+}
+button {
+    background-color: #f56606;
+    color: white;
+    border: none;
+    padding: 10px 20px;
     text-align: center;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 700;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.2s ease;
+}
+button:hover {
+    background-color: #dad2d2;
+    color: #050505;
 }
 
-/*MAIN/IMG*/
-
-body main {
-    max-width: 450px;
-    margin: 0 auto;
-    font-family: 'Poppins', sans-serif;
-    margin-top: 100px;
-    margin-bottom: 100px;
+/*-LOGO DE WHATSAPP--*/
+.whatsapp-icon {
+    position: fixed;
+    bottom: 152px;
+    right: 25px;
+    z-index: 9999;
 }
-
-main img {
-    border-radius: 20px;
-    box-shadow: 0 6px 12px black;
-    filter: brightness(100%);
+.whatsapp-icon img {
+    width: 50px;
+    border-radius: 50%;
+    box-shadow: 0 8px 16px rgba(12, 12, 12, 0.3);
+    transition: transform 0.3s ease;
 }
-
-body {
-    margin: 0;
-    padding: 0;
-    position: relative;
+.whatsapp-icon img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(12, 12, 12, 0.3);
 }

@@ -1,14 +1,35 @@
-/*-----HEADER-----*/
+/*--BODY-HEADER--*/
+/*BODY-IMG-LOGO*/
+body header img {
+    width: 170px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+header img {
+    display: block;
+    margin: 0 auto;
+}
 
-header {
-    nav {
-        background-color: rgb(184, 179, 179);
-    }
-
-    img {
-        width: 350px;
-        height: auto;
-        display: block;
-        margin: 0 auto;
-    }
+/*BODY-OPCIONES DE NAVEGACION*/
+.nav.nav-tabs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+}
+.nav.nav-tabs li.nav-item {
+    margin-right: 20px;
+}
+.nav.nav-tabs a.nav-link {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    text-decoration: none;
+    color: #dad2d2;
+    transition: color 0.3s ease-in-out;
+}
+.nav.nav-tabs a.nav-link:hover {
+    color: #ff8000;
 }

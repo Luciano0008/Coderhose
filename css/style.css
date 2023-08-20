@@ -1,11 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300;1,400;1,700&display=swap');
 
-
 /*--BODY-HEADER--*/
 
 /*BODY-IMG-LOGO*/
 body header img {
-  width: 250px; 
+  width: 170px; 
   height: auto;
 }
 header img {
@@ -32,7 +31,7 @@ body {
 .nav.nav-tabs a.nav-link {
   font-family: 'Poppins', sans-serif; 
   font-weight: bold; 
-  font-size: 20px;
+  font-size: 15px;
   text-decoration: none;
   color: #dad2d2; 
   transition: color 0.3s ease-in-out;
@@ -50,7 +49,7 @@ body {
   margin-top: 50px;
 }
 .card {
-  max-width: 300px;
+  max-width: 225px;
   outline: 2px solid #fff
 }
 .card:hover {
@@ -72,12 +71,13 @@ body {
 .card h2{
   text-align: center;
   font-weight: bold;
+  font-size: 20px;
 }
 .card p{
   text-align: center;
   font-family: 'Poppins', sans-serif; 
   font-weight: bold; 
-  font-size: 20px;
+  font-size: 15px;
   color:black 
 }
 
@@ -85,7 +85,7 @@ body {
 body p{
   text-align: center;
   font-family: 'Poppins', sans-serif;
-  font-size: 20px;
+  font-size: 15px;
   font-weight: bold;
   color: #dad2d2;
   max-width: 800px;
@@ -93,7 +93,7 @@ body p{
 }
 h1 {
   margin-top: 20px;
-  font-size: 48px;
+  font-size: 30px;
   font-weight: bold;
   text-align: center;
   color: #333;
@@ -113,7 +113,7 @@ h1 {
 }
 h3 {
   margin-top: 20px;
-  font-size: 48px;
+  font-size: 30px;
   font-weight: bold;
   text-align: center;
   color: #333;
@@ -170,7 +170,7 @@ h3 {
 /*--BODY/HR/SEPARADORES--*/
 body hr {
   border: none;
-  border-top: 5px solid #ffffff;
+  border-top: 3px solid #ffffff;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
@@ -180,7 +180,7 @@ body hr {
 body section p {
   text-align: center;
   color: #f56606;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: bold;
   font-family: 'Poppins', sans-serif;
 }
@@ -188,14 +188,14 @@ body section p {
 /*--BODY/PDF´S--*/
 .pdf-link {
   display: block;
-  width: 50%;
+  width: 35%;
   margin: 20px auto;
   padding: 10px 20px;
   background-color: #f56606;
   color: #fff;
   text-decoration: none;
   text-align: center;
-  font-size: 20px;
+  font-size: 15px;
   font-weight: bold;
   color: #dad2d2;
   border-radius: 15px;
@@ -223,7 +223,7 @@ button {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 20px;
+  font-size: 15px;
   font-weight: bold;
   border-radius: 15px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -238,11 +238,11 @@ button:hover{
 .whatsapp-icon {
   position: fixed;
   bottom: 152px;
-  right: 25px;
+  right: 5px;
   z-index: 9999;
 }
 .whatsapp-icon img {
-  width: 50px;
+  width: 40px;
   border-radius: 50%;
   box-shadow: 0 8px 16px rgba(12, 12, 12, 0.3);
   transition: transform 0.3s ease;
@@ -260,19 +260,19 @@ button:hover{
   max-width: 80%;
   margin: 0 auto;
   padding: 20px;
-  border: 5px solid #ccc;
+  border: 2px solid #ccc;
   border-radius: 20px;
 }
 .form-control {
   width: 100%;
   padding: 10px;
-  border: 5px solid #f56606;
+  border: 2px solid #f56606;
   border-radius: 20px;
 }
 .form-select {
   width: 100%;
   padding: 10px;
-  border: 5px solid #f56606;
+  border: 2px solid #f56606;
   border-radius: 20px;
 }
 .form-label {
@@ -301,7 +301,7 @@ button:hover{
   overflow: hidden;
   position: relative;
   margin: auto;
-  border: 5px solid #ccc;
+  border: 2px solid #ccc;
 }
 .map-container iframe {
   width: 100%;
@@ -326,6 +326,12 @@ button:hover{
   grid-gap: 50px;
   padding: 45px 0px;
 }
+.pie-pagina .grupo-1 .box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
 .pie-pagina .grupo-1 .box figure{
   width: 100%;
   height: 100%;
@@ -334,12 +340,12 @@ button:hover{
   align-items: center;
 }
 .pie-pagina .grupo-1 .box figure img{
-  width: 250px;
+  width: 170px;
 }
 .pie-pagina .grupo-1 .box h2{
   color: #fff;
   margin-bottom: 25px;
-  font-size: 20px;
+  font-size: 18px;
   color: #f56606;
   font-weight: bold;
 }
@@ -368,7 +374,7 @@ button:hover{
   color: #fff;
 }
 .pie-pagina .grupo-2 small{
-  font-size: 20px;
+  font-size: 15px;
 }
 @media screen and (max-width:800px) {
   .pie-pagina .grupo-1{

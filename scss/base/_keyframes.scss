@@ -1,0 +1,38 @@
+/*BODY-CARTAS-IMAGENES-MAIN*/
+@keyframes bounceAnimation {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/*BODY-MAIN-TEXTOS*/
+/*H1*/
+@keyframes fade-scale {
+    from {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    to {
+        opacity: 0.5;
+        transform: scale(1.0);
+    }
+}
+/*H3*/
+@keyframes fade-scale {
+    from {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    to {
+        opacity: 0.5;
+        transform: scale(1.0);
+    }
+}
